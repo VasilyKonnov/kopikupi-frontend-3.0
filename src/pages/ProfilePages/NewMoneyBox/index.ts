@@ -1,0 +1,1 @@
+export { NewMoneyBox } from './NewMoneyBox'

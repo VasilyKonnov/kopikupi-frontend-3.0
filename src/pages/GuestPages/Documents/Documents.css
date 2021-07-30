@@ -1,0 +1,48 @@
+.doc-h1 {
+	font-family: Nunito;
+	font-weight: 800;
+	font-size: 20px;
+	color: #0079D0;
+	margin-bottom: 23px;
+}
+
+.doc-col a {
+	display: flex;
+	align-items: start;
+	margin-bottom: 12px;
+}
+
+.doc-col a span {
+	line-height: 20px;
+	font-size: 16px;
+	color: #4D4D4D;
+	text-decoration: underline;
+}
+
+.doc-col a img {
+	width: 20px;
+	margin-right: 12px;
+}
+
+.wrapper-doc {
+	min-height: calc(100vh - 650px);
+	padding-bottom: 60px;
+}
+
+@media (min-width: 992px) {
+
+	.doc-h1 {
+		font-size: 36px;
+		color: #666666;
+		margin-bottom: 40px;
+	}
+
+	.doc-col a {
+		margin-bottom: 19px;
+	}
+
+	.doc-col a img {
+		margin-right: 6px;
+	}
+
+}

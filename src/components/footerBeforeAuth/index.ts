@@ -1,0 +1,1 @@
+export { FooterBeforeAuth } from './footerBeforeAuth'

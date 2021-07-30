@@ -1,0 +1,194 @@
+.title,
+.titleCenter {
+  color: #5c5c5c;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+}
+.titleCenter {
+  text-align: center;
+}
+.p {
+  color: #c4c4c4;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+}
+
+.beforeBtn {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto 20px;
+}
+.afterBtn {
+  width: 100%;
+  max-width: 662px;
+  margin: 20px auto 28px;
+}
+.info {
+  width: 400px;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.btnCenter {
+  width: fit-content;
+  display: block;
+  margin: 0 auto;
+}
+.agreement {
+  text-decoration-line: underline;
+  font-size: 16px;
+  line-height: 18px;
+  color: #0079d0;
+  text-align: center;
+  display: block;
+  margin-bottom: 18px;
+}
+.stepsWrap {
+  margin: 15px auto 24px;
+  width: 100%;
+  max-width: 457px;
+  position: relative;
+  .line {
+    display: none;
+  }
+  .steps {
+    height: 132px;
+    width: 150px;
+    margin: 0 auto;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    &::before {
+      content: '';
+      width: 2px;
+      left: 13px;
+      height: 90%;
+      background: #c4c4c4;
+      position: absolute;
+    }
+    .stap {
+      width: 129px;
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
+      align-items: center;
+      .stapNumber {
+        display: flex;
+        margin: 0;
+        margin-right: 9px;
+        justify-content: center;
+        align-items: center;
+        max-width: 28px;
+        min-width: 28px;
+        width: 100%;
+        height: 100%;
+        min-height: 28px;
+        max-height: 28px;
+        border-radius: 50%;
+        background: #66aee3;
+        color: #fff;
+        font-family: Nunito;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 16px;
+      }
+      .stapTitle {
+        font-weight: 800;
+        font-family: Nunito;
+        font-size: 16px;
+        line-height: 18px;
+        color: #0079d0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: '767px') {
+  .p {
+    font-size: 22px;
+    line-height: 26px;
+  }
+  .title,
+  .titleCenter {
+    color: #5c5c5c;
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .agreement {
+    text-decoration-line: underline;
+    font-size: 16px;
+    line-height: 18.5px;
+  }
+  .stepsWrap {
+    margin: 36px auto;
+    width: 100%;
+    max-width: 457px;
+    position: relative;
+    .line {
+      display: block;
+      height: 10px;
+      width: calc(100% - 90px);
+      position: absolute;
+      z-index: 0;
+      background: linear-gradient(to right, #7ba8c9 0%, #0079d0 100%);
+      margin: 0 auto;
+      box-sizing: border-box;
+      padding: 0 15px;
+      margin-left: 45px;
+      top: 25px;
+    }
+    .steps {
+      height: 100%;
+      width: initial;
+      z-index: 1;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      &::before {
+        display: none;
+      }
+      .stap {
+        width: 129px;
+        text-align: center;
+        position: relative;
+        display: block;
+        .stapNumber {
+          display: flex;
+          margin: 0 auto;
+          justify-content: center;
+          align-items: center;
+          min-width: 57px;
+          min-height: 57px;
+          max-width: 57px;
+          max-height: 57px;
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          background: #66aee3;
+          color: #fff;
+          font-family: Nunito;
+          font-size: 40px;
+          line-height: 40px;
+          margin-bottom: 15px;
+        }
+        .stapTitle {
+          font-weight: 800;
+          font-family: Nunito;
+          font-size: 22px;
+          line-height: 22px;
+          color: #0079d0;
+        }
+      }
+    }
+  }
+}

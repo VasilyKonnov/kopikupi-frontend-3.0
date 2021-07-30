@@ -1,0 +1,649 @@
+.section-calculator-wrap {
+  padding: 0px;
+  border: 0;
+  box-sizing: border-box;
+  border-radius: 50px;
+  color: #666666;
+}
+
+.section-calculator-h1 {
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 17px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 105%;
+  text-align: center;
+  color: #0079d0;
+}
+.new-piggy-bank-name input.ant-input {
+  border: 0;
+}
+.new-piggy-bank-name {
+  margin-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.6);
+  width: 100%;
+  max-width: 649px;
+  padding-right: 25px;
+  position: relative;
+}
+
+.new-piggy-bank-name::after {
+  content: '';
+  display: block;
+  width: 19px;
+  height: 20px;
+  background-image: url(../../assets/images/pen-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+}
+
+.new-piggy-bank-name--title {
+  font-size: 16px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 4px;
+}
+
+.new-piggy-bank-name input.ant-input {
+  font-size: 16px;
+  padding: 0;
+}
+
+.calc-result-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 -15px;
+}
+
+.calc-result-wrap--data {
+  width: 100%;
+}
+
+.calc-result-wrap--item-vs-kk {
+  background: #eceff1;
+  border-radius: 0px;
+  color: #0079d0;
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  width: 100%;
+}
+
+.question-modal-wrap button {
+  width: 23px;
+  height: 23px;
+  font-size: 20px;
+  line-height: 24px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  cursor: pointer;
+  background: #0079d0;
+  outline: none;
+  border: 0;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  z-index: 4;
+}
+
+.question-modal-wrap {
+  position: relative;
+  z-index: 3;
+}
+
+.question-modal {
+  position: absolute;
+  height: 395px;
+  width: 100vw;
+  top: -50px;
+  left: -40px;
+  z-index: 0;
+}
+
+.question-modal--fon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #e2e2e7;
+  border-radius: 34px;
+  transform: rotate(356deg);
+  z-index: 0;
+  left: 10px;
+}
+
+.question-modal--close {
+  float: right;
+  display: block;
+  position: absolute;
+  top: 14px;
+  right: 40px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../../assets/images/close-modal-icon.svg);
+  background-size: contain;
+  background-position: сenter;
+  background-repeat: no-repeat;
+  z-index: 3;
+  cursor: pointer;
+}
+
+.question-modal--text {
+  color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  z-index: 3;
+  width: 80%;
+  left: 69px;
+  top: 59px;
+}
+
+.question-modal--text h3 {
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.question-modal--text .line {
+  display: block;
+  height: 1px;
+  width: 255px;
+  background: rgba(0, 0, 0, 0.6);
+  margin-bottom: 20px;
+}
+
+.question-modal--text p {
+  font-size: 16px;
+  text-indent: 1em;
+}
+
+.calc-result-wrap--item {
+  width: 100%;
+  padding: 8px;
+}
+
+.target-type {
+  display: flex;
+  flex-direction: column;
+}
+
+.target-type--question {
+  display: flex;
+  align-items: center;
+  height: 23px;
+  margin-bottom: 9px;
+  width: 363px;
+  max-width: 100%;
+}
+
+.target-type--question button {
+  width: 23px;
+  height: 23px;
+  font-size: 20px;
+  line-height: 25px;
+  margin-right: 15px;
+  background: #0079d0;
+  outline: none;
+  border: 0;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 700;
+  color: #ffffff;
+  border-radius: 50%;
+  cursor: text;
+}
+
+.target-type--question span {
+  font-size: 16px;
+  line-height: 19px;
+  font-style: normal;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.target-type--type {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-button--active {
+  font-size: 15px;
+  line-height: 18px;
+  padding: 11px 19px;
+  text-align: center;
+  color: #ffffff;
+  border: 0;
+  background-color: #0079d0;
+  box-shadow: 0px 0px 130px 40px #bebebe;
+  border-radius: 83px;
+}
+
+.toggle-button--hold {
+  font-size: 15px;
+  line-height: 18px;
+  padding: 11px 19px;
+  text-align: center;
+  border: 0;
+  background: transparent;
+  border-radius: 83px;
+  color: #8e8f91;
+}
+
+.toggle-button {
+  width: 500px;
+  max-width: 100%;
+  border-radius: 36px;
+  margin-bottom: 14px;
+  background: #eceff1;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.calculation-result--title {
+  /*display: flex;*/
+}
+
+.calculation-result {
+  margin-bottom: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blue-box {
+  display: none;
+}
+
+.blue-box-text {
+  font-size: 16px;
+  line-height: 18px;
+  margin-right: 0px;
+}
+
+/* Может быть использовать базовые стили bootstrap? */
+.font-weight-bold {
+  font-weight: 700;
+}
+
+.flex-dir-col {
+  flex-direction: column;
+}
+
+.calculation-result p {
+  font-size: 16px;
+  line-height: 1em;
+  text-align: right;
+  margin-bottom: 0;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.purchase-acceleration {
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.purchase-acceleration--question button {
+  width: 23px;
+  height: 23px;
+  font-size: 20px;
+  line-height: 25px;
+  margin-right: 6px;
+  background: #0079d0;
+  outline: none;
+  border: 0;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  color: #ffffff;
+  border-radius: 50%;
+  cursor: text;
+}
+
+.purchase-acceleration--question {
+  margin-right: 0px;
+}
+
+.purchase-acceleration--question span {
+  font-size: 14px;
+  line-height: 19px;
+  margin-right: 10px;
+}
+
+.purchase-acceleration p {
+  font-size: 14px;
+  margin-top: 4px;
+  font-family: Nunito;
+  color: #0079d0;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+.form-calculator {
+  margin-bottom: 33px;
+}
+
+.form-calculator--item {
+  margin-bottom: 16px;
+}
+
+.form-calculator--item p {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 8px;
+}
+
+.form-calculator--item p span {
+  color: red;
+  padding-right: 5px;
+}
+
+.form-calculator--item input {
+  height: 40px;
+  font-size: 14px;
+  padding-left: 10px;
+  background: #eceff1;
+  border-radius: 36px !important;
+}
+
+.form-calculator--item .ant-slider {
+  max-width: calc(100% - 38px);
+  margin: -4px auto 0 !important;
+  height: initial;
+}
+
+.purchase-acceleration .purchase-acceleration--warning {
+  font-size: 14px;
+  color: rgb(102, 60, 0) !important;
+  border-radius: 10px;
+  background: #fff4e5;
+  font-weight: 700;
+  padding: 8.5px;
+  margin-top: 0;
+}
+
+/* Блок с кнопками заведения копилки */
+.actions-wrap {
+  /* Чтобы одновременно менять размеры шрифта для вложенных элементов.
+	 М.б. целесообразнее задать 1 раз html.font-size для разных разрешений, а здесь использовать rem.
+	 Чтобы не дублировать media-запросы
+	 */
+  font-size: 16px;
+  font-family: Roboto, sans-serif;
+  margin: 1.5em 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actions-wrap span {
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.5em;
+  text-align: center;
+  letter-spacing: -0.015em;
+  font-size: 1em;
+  color: rgba(0, 0, 0, 0.6);
+  margin-top: 1.5em;
+}
+
+@media (min-width: 576px) {
+  .calc-result-wrap--item-vs-kk {
+    border-radius: 26px;
+  }
+
+  .question-modal {
+    width: 70vw;
+  }
+
+  .question-modal--text h3 {
+    font-size: 32px;
+  }
+
+  .question-modal--text p {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  .calc-result-wrap--item {
+    max-width: 355px;
+    margin-right: 40px;
+    padding: 17px 17px 0 17px;
+  }
+
+  .calc-result-wrap {
+    margin: 0;
+    flex-direction: row;
+  }
+
+  .calc-result-wrap--item-vs-kk {
+    padding: 17px 17px 0 17px;
+    max-width: 610px;
+    flex-direction: row;
+  }
+
+  .purchase-acceleration {
+    justify-content: start;
+  }
+
+  .purchase-acceleration .purchase-acceleration--warning {
+    font-size: 16px;
+  }
+
+  .calculation-result {
+    margin-bottom: 25px;
+  }
+
+  .section-calculator-wrap {
+    padding: 40px 50px;
+    border: 4px solid #0775c2;
+    border-radius: 56px;
+  }
+
+  .section-calculator-h1 {
+    font-size: 30px;
+  }
+
+  .target-type--question span {
+    font-size: 18px;
+  }
+
+  .toggle-button--active {
+    font-size: 18px;
+  }
+
+  .toggle-button--hold {
+    font-size: 18px;
+  }
+
+  .blue-box-text {
+    font-size: 17px;
+    margin-right: 15px;
+  }
+
+  .calculation-result p {
+    font-size: 17px;
+  }
+
+  .purchase-acceleration--question span {
+    font-size: 17px;
+  }
+
+  .purchase-acceleration p {
+    font-size: 17px;
+  }
+
+  .form-calculator--item p {
+    font-size: 17px;
+  }
+
+  .form-calculator--item input {
+    font-size: 17px;
+  }
+
+  .question-modal-wrap button {
+    margin-right: 11px;
+  }
+
+  .question-modal {
+    height: 465px;
+    width: 367px;
+  }
+}
+
+@media (min-width: 992px) {
+  .target-type {
+    display: flex;
+  }
+
+  .new-piggy-bank-name {
+    margin-bottom: 28px;
+  }
+
+  .new-piggy-bank-name input.ant-input {
+    font-size: 22px;
+  }
+
+  .new-piggy-bank-name--title {
+    font-size: 22px;
+    line-height: 26px;
+    margin: 0 0 10px;
+  }
+
+  .question-modal {
+    height: 407px;
+    width: 465px;
+  }
+
+  .actions-wrap {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .calc-result-wrap--item-vs-kk {
+    padding: 27px 27px 0 27px;
+  }
+
+  .calc-result-wrap--item-vs-kk {
+    padding: 27px 27px 0 27px;
+  }
+
+  .question-modal-wrap button {
+    margin-right: 31px;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .question-modal--text {
+    left: 116px;
+    padding-right: 60px;
+  }
+
+  .calc-result-wrap--item {
+    max-width: 355px;
+    margin-right: 100px;
+  }
+
+  .target-type--question button {
+    width: 65px;
+    height: 65px;
+    font-size: 40px;
+    margin-right: 25px;
+  }
+
+  .target-type--question span {
+    font-size: 22px;
+    line-height: 37px;
+  }
+
+  .section-calculator-h1 {
+    font-size: 50px;
+    margin-top: 45px;
+    margin-bottom: 27px;
+  }
+
+  .toggle-button--hold {
+    font-size: 28px;
+    line-height: 33px;
+    padding: 17px 65px;
+  }
+
+  .toggle-button--active {
+    font-size: 28px;
+    line-height: 33px;
+    padding: 17px 65px;
+  }
+
+  .toggle-button {
+    width: 659px;
+    border-radius: 83px;
+    margin-bottom: 32px;
+  }
+
+  .blue-box {
+    display: block;
+    margin-right: 25px;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background: #0079d0;
+  }
+
+  .blue-box-text {
+    font-size: 27px;
+    line-height: 33px;
+  }
+
+  .calculation-result p {
+    font-size: 26px;
+  }
+
+  .purchase-acceleration--question button {
+    width: 65px;
+    height: 65px;
+    font-size: 40px;
+    margin-right: 25px;
+  }
+
+  .purchase-acceleration--question span {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+  .purchase-acceleration p {
+    font-size: 28px;
+    margin-top: 12px;
+  }
+
+  .form-calculator--item p {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+
+  .form-calculator--item input {
+    height: 50px;
+    font-size: 20px;
+    padding-left: 22px;
+  }
+
+  .purchase-acceleration--question {
+    margin-right: 25px;
+  }
+}

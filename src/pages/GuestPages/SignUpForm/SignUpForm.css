@@ -1,0 +1,105 @@
+.sign-up-wrap {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.sign-up-wrap h1 {
+    font-family: Nunito;
+    font-weight: 800;
+    font-size: 20px;
+    color: #666666;
+}
+
+.sign-up-wrap p {
+    font-size: 1em;
+    color: #C4C4C4;
+    border-top: 1px solid #C4C4C4;
+    text-align: center;
+    margin: 0 10px;
+    width: 300px;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 401px;
+}
+
+.sign-up-form label {
+    line-height: 1.3em;
+    margin: 1em 0 0.4em;
+    font-size: 1em;
+}
+
+.sign-up-form input {
+    height: 2.7em;
+    padding-left: 1em;
+    font-size: 1em;
+    background: #ECEFF1;
+    border-radius: 36px !important;
+    width: 244px;
+}
+
+.sign-up-form .action-button {
+    margin: 1em 0 2em;
+}
+
+p.back-link-label {
+    width: 260px;
+    border: none;
+}
+
+.back-link {
+    font-size: 1em;
+    padding: 1em 0 2em;
+    color: #0079D0;
+}
+
+.send-pass-again:disabled,
+.send-pass-again[disabled] {
+    color: #888c8f;
+}
+
+.send-pass-again {
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    color: #0079D0;
+    background: transparent;
+    outline: none;
+    border: 0;
+    padding: 0;
+}
+
+@media (min-width: 768px) {
+    .sign-up-wrap {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    .sign-up-wrap {
+        font-size: 22px;
+    }
+
+    .sign-up-wrap h1 {
+        font-size: 36px;
+    }
+
+    .sign-up-wrap p {
+        width: 439px;
+        border: none;
+    }
+
+    .sign-up-form input {
+        width: 401px;
+    }
+
+    p.back-link-label {
+        width: 390px;
+    }
+}

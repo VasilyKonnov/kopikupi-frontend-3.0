@@ -1,0 +1,56 @@
+.datePicker {
+  width: 100%;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    right: 2px;
+    bottom: 6px;
+    width: 19px;
+    height: 19px;
+    background: url(../../assets/images/input-pen-icon.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  div {
+    input {
+      padding: 0;
+      font-size: 16px;
+      color: #666666;
+      font-weight: 400;
+    }
+    i {
+      display: none;
+    }
+  }
+}
+.datePickerWrap {
+  margin-bottom: 15px;
+  border-bottom: solid 1px #666;
+  position: relative;
+  .datePickerLabel {
+    font-size: 16px;
+    color: #c4c4c4;
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .datePickerWrap {
+    margin-bottom: 35px;
+    .datePickerLabel {
+      font-size: 22px;
+      margin-bottom: 5px;
+      line-height: 22px;
+    }
+  }
+  .datePicker {
+    width: 100%;
+    div {
+      input {
+        font-size: 22px;
+      }
+    }
+  }
+}

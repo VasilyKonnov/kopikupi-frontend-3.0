@@ -1,0 +1,110 @@
+.greedWrap {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 760px;
+}
+.greedCol {
+  width: 100%;
+  box-sizing: border-box;
+}
+.greedWrapAddress {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.greedColAddress {
+  width: 100%;
+  box-sizing: border-box;
+}
+.btnCenter {
+  display: block;
+  margin: 0 auto;
+  width: initial;
+}
+.btnSubmit {
+  margin-top: 39px !important;
+}
+.labelRadios {
+  font-size: 16px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 15px;
+  display: block;
+}
+.genderWrap {
+  margin-bottom: 33px;
+}
+.checkBoxWrap {
+  margin-bottom: 29px;
+  margin-top: 20px;
+}
+.wrapSelect {
+  width: 100%;
+}
+.selectLabel {
+  font-size: 16px;
+  line-height: 16px;
+  color: #c4c4c4;
+  margin-bottom: 9px;
+  display: block;
+}
+.selectOption {
+  font-size: 16px;
+}
+
+@media screen and (min-width: '767px') {
+  .selectOption {
+    font-size: 22px;
+  }
+  .genderWrap {
+    margin-bottom: 46px;
+  }
+  .selectLabel {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .labelRadios {
+    font-size: 22px;
+    line-height: 22px;
+  }
+  .btnCenter {
+    display: inline-block;
+    margin: 0;
+  }
+  .greedWrap {
+    flex-direction: row;
+  }
+  .greedCol {
+    width: 50%;
+    &:first-child {
+      margin-right: 15px;
+    }
+    &:last-child {
+      margin-left: 15px;
+    }
+  }
+  .greedWrapAddress {
+    flex-direction: row;
+  }
+  .greedColAddress {
+    width: 33%;
+    margin: 0 15px;
+    &:first-child {
+      margin-left: 0px;
+    }
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+@media screen and (min-width: '1200px') {
+  .greedCol {
+    &:first-child {
+      margin-right: 32px;
+    }
+    &:last-child {
+      margin-left: 32px;
+    }
+  }
+}

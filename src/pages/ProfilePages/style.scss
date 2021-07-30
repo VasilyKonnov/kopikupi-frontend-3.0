@@ -1,0 +1,55 @@
+.button-primary {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 11px 33px;
+  color: #ffffff;
+  background: #0079d0;
+  border-radius: 22px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    color: #fff;
+  }
+  &:disabled {
+    background: #c4c4c4;
+  }
+}
+.btm-center {
+  display: block;
+  margin: 0 auto;
+  width: initial;
+}
+.greenCheckIcon {
+  display: inline-block;
+  width: 19px;
+  height: 15px;
+  background: url(../../assets/images/green-check-icon.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 5px;
+}
+.pageTitle {
+  color: #5c5c5c;
+  font-size: 20px;
+  line-height: 23px;
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: 800;
+}
+.titleCenter {
+  text-align: center;
+}
+
+@media screen and (min-width: '767px') {
+  .pageTitle {
+    font-size: 36px;
+    line-height: 42px;
+  }
+  .button-primary {
+    font-size: 20px;
+    padding: 19px 44px;
+    border-radius: 78px;
+  }
+}

@@ -1,0 +1,7 @@
+export { MainProfile } from './MainProfile'
+export { StepsFillProfile } from './StepsFillProfile'
+export { NewMoneyBox } from './NewMoneyBox'
+export { Programs } from './Programs'
+export { Chat } from './Chat'
+export { More } from './More'
+export { RestorePassword } from './RestorePassword'
